@@ -7,41 +7,41 @@
 //
 
 import Foundation
-import XCTest
 import Keychain
+import XCTest
 
 class KeychainTests: XCTestCase {
     private let account = "account"
     private let service = "service"
     private let password = "12345678"
-    
+
     override func setUp() {
         super.setUp()
     }
-    
+
     override func tearDown() {
         super.tearDown()
-        
+
         Keychain.delete(account: account, service: service)
     }
-    
+
     func testSave() {
         Keychain.set(password: password, account: account, service: service)
-        
+
         let result = Keychain.get(account: account, service: service)
-        
+
         XCTAssertEqual(result!, password)
     }
-    
+
     func testDelete() {
         Keychain.set(password: password, account: account, service: service)
         Keychain.delete(account: account, service: service)
-        
+
         let result = Keychain.get(account: account, service: service)
-        
+
         XCTAssertNil(result)
     }
-    
+
     static var allTests = [
         ("testSave", testSave),
         ("testDelete", testDelete)
