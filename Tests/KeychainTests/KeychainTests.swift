@@ -44,6 +44,6 @@ class KeychainTests: XCTestCase {
     
     static var allTests = [
         ("testSave", testSave),
-        ("testDelete", testDelete),
+        ("testDelete", testDelete)
     ]
 }
