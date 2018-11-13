@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Keychain"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "Micro framework for Keychain access."
   s.homepage     = "https://github.com/tink-ab/Keychain.swift"
   s.license      = { :type => "MIT", :file => "LICENSE" }
