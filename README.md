@@ -1,7 +1,7 @@
 # Keychain
 
 [![Version](https://img.shields.io/github/release/tink-ab/Keychain.svg)](https://github.com/tink-ab/Keychain/releases)
-![Swift Version](https://img.shields.io/badge/swift-4.0-orange.svg)
+![Swift Version](https://img.shields.io/badge/swift-4.2-orange.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Micro framework for easily accessing the Keychain in less than 100 lines of code.
